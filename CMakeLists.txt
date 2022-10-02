@@ -6,7 +6,11 @@ set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED TRUE)
 set(CMAKE_C_EXTENSIONS OFF)
 
-add_compile_options(-Wall -Wextra -Wconversion -Wsign-conversion -Wshadow -O3 -Wno-stringop-overflow)
+add_compile_options(-Wall -Wextra -Wconversion -Wsign-conversion -Wshadow -O3)
+
+if (CMAKE_C_COMPILER_ID STREQUAL "GNU")
+    add_compile_options(-Wno-stringop-overflow)
+endif()
 
 include(FetchContent)
 
