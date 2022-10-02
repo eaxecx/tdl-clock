@@ -4,7 +4,9 @@ An ASCII analog clock written in C.
 
 This program does not use curses for console graphics. It uses [TDL](https://github.com/celtrecium/tdl), a curses-like library written by my friend [Celtrecium](https://github.com/celtrecium).
 
-![Demonstration](demonstration.gif)
+<p align="center">
+  <img src="demonstration.gif" alt="animated" />
+</p>
 
 ## Building
 
