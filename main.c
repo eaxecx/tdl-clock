@@ -60,14 +60,19 @@ static void _draw_clock_face(tdl_canvas_t *canvas, tdl_point_t coords, int radiu
         }
     }
 
+    tdl_text_t text = tdl_text(u8string(""), HOUR_MARK_STYLE);
+
     for (int i = 0; i < 12; ++i) {
         int x = coords.x + (int) (cos((i + 46) * 30 * M_PI / 180) * radius * CLOCK_FACE_X_RATIO);
         int y = coords.y + (int) (sin((i + 46) * 30 * M_PI / 180) * radius);
 
         tdl_set_cursor_pos(canvas, tdl_point(x, y));
 
-        tdl_print(canvas, tdl_text(u8string((const cstr) numbers[i]), HOUR_MARK_STYLE));
+        u8string_set(&text.string, (const cstr) numbers[i]);
+        tdl_print(canvas, text);
     }
+
+    tdl_text_free(text);
 }
 
 static void _draw_sec_hand(tdl_canvas_t *canvas, tdl_point_t coords, int secs) {
