@@ -1,3 +1,5 @@
+/* This file is licensed under the GNU GPL v3.0 license. */
+
 #include <u8string.h>
 #include <tdl.h>
 #include <tdl/tdl_char.h>
