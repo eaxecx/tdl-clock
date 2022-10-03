@@ -12,7 +12,7 @@ This program does not use curses for console graphics. It uses [TDL](https://git
 
 Your terminal must support basic ANSI escape codes (16 colors, bold font, hiding cursor and alternate screen for convenience) to use this program.
 
-With CMake (supported compilers are GCC and Clang):
+With CMake >= 3.11.4 (supported compilers are GCC and Clang):
 1. `mkdir build && cd build`
 2. `cmake ..`
 3. `cmake --build .` or name of used generator
