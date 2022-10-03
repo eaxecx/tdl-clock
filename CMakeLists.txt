@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.11.4)
 
 project(tdl-clock LANGUAGES C VERSION 1.0)
 
