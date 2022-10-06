@@ -5,15 +5,15 @@ An ASCII analog clock and digital clock written in C.
 This program does not use curses for console graphics. It uses [TDL](https://github.com/celtrecium/tdl), a curses-like library written by my friend [Celtrecium](https://github.com/celtrecium).
 
 <p align="center">
-    Analog clock
+  Analog clock
 
-    <img src="analog_clock_demonstration.gif" alt="animated" />
+  <img src="analog_clock_demonstration.gif" alt="animated" />
 </p>
 
 <p align="center">
-    Digital clock (12-hour time)
+  Digital clock (12-hour time)
 
-    <img src="digital_clock_demonstration.gif" alt="animated" />
+  <img src="digital_clock_demonstration.gif" alt="animated" />
 </p>
 
 Your terminal must support basic ANSI escape codes (16 colors, bold font, hiding cursor and alternate screen for convenience) to use this program.
