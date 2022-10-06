@@ -4,15 +4,15 @@ An ASCII analog clock and digital clock written in C.
 
 This program does not use curses for console graphics. It uses [TDL](https://github.com/celtrecium/tdl), a curses-like library written by my friend [Celtrecium](https://github.com/celtrecium).
 
-<p align="center">
-  Analog clock
+<p align="center">Analog clock</p>
 
+<p align="center">
   <img src="analog_clock_demonstration.gif" alt="animated" />
 </p>
 
-<p align="center">
-  Digital clock (12-hour time)
+<p align="center">Digital clock (12-hour time)</p>
 
+<p align="center">
   <img src="digital_clock_demonstration.gif" alt="animated" />
 </p>
 
